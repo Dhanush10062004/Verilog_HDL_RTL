@@ -1,0 +1,203 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/QUARTUS PRGMS/D1/simulation/modelsim
+vannd
+Z1 !s110 1728102827
+!i10b 1
+!s100 UaozX=aeDCLN2b`e=koW32
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ii<Xaejlbd[TW0Im:JARe02
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1728061598
+Z5 8D:/QUARTUS PRGMS/D1/gates.v
+Z6 FD:/QUARTUS PRGMS/D1/gates.v
+!i122 0
+L0 16 5
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1728102827.000000
+Z9 !s107 D:/QUARTUS PRGMS/D1/gates.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS PRGMS/D1|D:/QUARTUS PRGMS/D1/gates.v|
+!i113 1
+Z11 o-vlog01compat -work work
+Z12 !s92 -vlog01compat -work work {+incdir+D:/QUARTUS PRGMS/D1}
+Z13 tCvgOpt 0
+vgates
+R1
+!i10b 1
+!s100 0AX1Uk^5am2@6X7:S[NCo3
+R2
+I?mn;mTPkHUdhdGHG7:2:>2
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 1 13
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vgates_tb
+R1
+!i10b 1
+!s100 ne2aFflgVOCoKzBC23n>W0
+R2
+IdcAe1[obXfgGY2kA`c4a41
+R3
+R0
+w1728102785
+8D:/QUARTUS PRGMS/D1/gates_tb.v
+FD:/QUARTUS PRGMS/D1/gates_tb.v
+!i122 1
+L0 1 21
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/QUARTUS PRGMS/D1/gates_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QUARTUS PRGMS/D1|D:/QUARTUS PRGMS/D1/gates_tb.v|
+!i113 1
+R11
+R12
+R13
+vnaand
+R1
+!i10b 1
+!s100 aM0[?cNflKH<nSH8zl:b`3
+R2
+IH_JO8im]J8:4f3fYg_WC82
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 37 5
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vnoor
+R1
+!i10b 1
+!s100 =A1DnOlPd[5`e9MkFC_G50
+R2
+I0OOB:Zbl9iQ_LD`HEF9R73
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 44 5
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+voor
+R1
+!i10b 1
+!s100 6X;RjL^_6Qf0<j0eL4f_>2
+R2
+I03kOmjc`_9<:fe8BbojOn1
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 23 5
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vxnoor
+R1
+!i10b 1
+!s100 YN>0Z_]bCMkjWczL7KeKI2
+R2
+I7Mf>cTUjXD22R^lck<NYL3
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 51 5
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13
+vxoor
+R1
+!i10b 1
+!s100 dYDU00M34TzPQ]B?mD09J1
+R2
+IzGa:bYL@^XHN4D=TgkEgA1
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 30 5
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+R13

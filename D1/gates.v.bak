@@ -1,0 +1,75 @@
+module gates(a,b,y1,y2,y3,y4,y5,y6);
+
+input a,b;
+output y1 ,y2 ,y3 ,y4 ,y5 ,y6 ;
+
+annd a1(a,b,y1);
+oor a2(a,b,y2);
+xoor a3(a,b,y2);
+naand a4(a,b,y2);
+noor a5(a,b,y2);
+xnoor a6(a,b,y2);
+
+endmodule
+
+
+module annd(a,b,y1);
+input a ,b;
+ouput y1 ;
+assign y1 = a&b ;
+endmodule 
+
+
+module oor(a,b,y2);
+input a,b;
+output y2 ;
+assign y2 = a|b;
+endmodule
+
+
+module xoor (a,b,y3);
+input a,b;
+output y3 ;
+assign y3 = a^b ;
+endmodule 
+
+
+module naand(a,b,y4);
+input a,b;
+output y4;
+assign y4 = ~(a&b);
+endmodule 
+
+
+module noor(a,b,y5);
+input a,b;
+output y5;
+assign y5 = ~(a|b);
+endmodule 
+
+
+
+module xnoor(a,b,y6);
+input a,b;
+output y6;
+assign y6 = ~(a^b);
+endmodule
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

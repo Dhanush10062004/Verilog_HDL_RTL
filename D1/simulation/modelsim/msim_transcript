@@ -1,0 +1,358 @@
+# Reading pref.tcl
+# do gates_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS\ PRGMS/D1 {D:/QUARTUS PRGMS/D1/gates.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:03:47 on Oct 05,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS PRGMS/D1" D:/QUARTUS PRGMS/D1/gates.v 
+# -- Compiling module gates
+# -- Compiling module annd
+# -- Compiling module oor
+# -- Compiling module xoor
+# -- Compiling module naand
+# -- Compiling module noor
+# -- Compiling module xnoor
+# 
+# Top level modules:
+# 	gates
+# End time: 10:03:47 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS\ PRGMS/D1 {D:/QUARTUS PRGMS/D1/gates_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:03:47 on Oct 05,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS PRGMS/D1" D:/QUARTUS PRGMS/D1/gates_tb.v 
+# -- Compiling module gates_tb
+# 
+# Top level modules:
+# 	gates_tb
+# End time: 10:03:47 on Oct 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  gates_tb.v
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" gates_tb.v 
+# Start time: 10:03:47 on Oct 05,2024
+# ** Error (suppressible): (vsim-19) Failed to access library 'gates_tb' at "gates_tb".
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./gates_run_msim_rtl_verilog.do PAUSED at line 12
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" work.gates_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" work.gates_tb 
+# Start time: 10:03:47 on Oct 05,2024
+# Loading work.gates_tb
+# Loading work.gates
+# Loading work.annd
+# Loading work.oor
+# Loading work.xoor
+# Loading work.naand
+# Loading work.noor
+# Loading work.xnoor
+add wave sim:/gates_tb/*
+run
+# Time: 0 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+# Time: 128 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 256 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 384 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+run
+# Time: 512 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+# Time: 640 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 768 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 896 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+run
+# Time: 1024 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+# Time: 1152 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 1280 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+run
+# Time: 1408 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+# Time: 1536 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+# Time: 1664 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 1792 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+run
+# Time: 1920 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+# Time: 2048 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+# Time: 2176 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+run
+# Time: 2304 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 2432 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+# Time: 2560 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+# Time: 2688 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+run
+# Time: 2816 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 2944 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+# Time: 3072 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+run
+# Time: 3200 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 3328 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 3456 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+# Time: 3584 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+run
+# Time: 3712 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 3840 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 3968 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+# Time: 4096 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+run
+# Time: 4224 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 4352 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 4480 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+run
+# Time: 4608 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+# Time: 4736 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 4864 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 4992 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+run
+# Time: 5120 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+# Time: 5248 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 5376 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+run
+# Time: 5504 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+# Time: 5632 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+# Time: 5760 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 5888 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+run
+# Time: 6016 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+# Time: 6144 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+# Time: 6272 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+run
+# Time: 6400 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 6528 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+# Time: 6656 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+# Time: 6784 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+run
+# Time: 6912 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 7040 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+# Time: 7168 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+# Time: 7296 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+run
+# Time: 7424 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 7552 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+# Time: 7680 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+run
+# Time: 7808 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 7936 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 8064 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+# Time: 8192 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+run
+# Time: 8320 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 8448 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 8576 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+run
+# Time: 8704 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+# Time: 8832 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 8960 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 9088 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+run
+# Time: 9216 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+# Time: 9344 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 9472 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+run
+# Time: 9600 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+# Time: 9728 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+# Time: 9856 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 9984 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+run
+# Time: 10112 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+# Time: 10240 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+# Time: 10368 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 10496 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+run
+# Time: 10624 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+# Time: 10752 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+# Time: 10880 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+run
+# Time: 11008 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 11136 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+# Time: 11264 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+# Time: 11392 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+run
+# Time: 11520 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 11648 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+# Time: 11776 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+run
+# Time: 11904 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 12032 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 12160 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+# Time: 12288 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+run
+# Time: 12416 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 12544 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 12672 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+run
+# Time: 12800 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+# Time: 12928 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 13056 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 13184 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+run
+# Time: 13312 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+# Time: 13440 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 13568 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 13696 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+run
+# Time: 13824 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+# Time: 13952 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 14080 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+run
+# Time: 14208 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+# Time: 14336 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+# Time: 14464 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 14592 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+run
+# Time: 14720 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+# Time: 14848 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+# Time: 14976 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+run
+# Time: 15104 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 15232 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+# Time: 15360 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+# Time: 15488 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+run
+# Time: 15616 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 15744 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+# Time: 15872 | a: 0, b: 0 | y1: 0, y2: 0, y3: 0, y4: 1, y5: 1, y6: 1
+run
+run
+# Time: 16000 | a: 0, b: 1 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 16128 | a: 1, b: 0 | y1: 0, y2: 1, y3: 1, y4: 1, y5: 0, y6: 0
+run
+# Time: 16256 | a: 1, b: 1 | y1: 1, y2: 1, y3: 0, y4: 0, y5: 0, y6: 1
+run
+run
+run
+run
+# End time: 10:06:30 on Oct 05,2024, Elapsed time: 0:02:43
+# Errors: 1, Warnings: 0

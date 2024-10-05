@@ -1,0 +1,47 @@
+|gates
+a => a.IN6
+b => b.IN6
+y1 << annd:a1.port2
+y2 << oor:a2.port2
+y3 << xoor:a3.port2
+y4 << naand:a4.port2
+y5 << noor:a5.port2
+y6 << xnoor:a6.port2
+
+
+|gates|annd:a1
+a => y1.IN0
+b => y1.IN1
+y1 <= y1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|gates|oor:a2
+a => y2.IN0
+b => y2.IN1
+y2 <= y2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|gates|xoor:a3
+a => y3.IN0
+b => y3.IN1
+y3 <= y3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|gates|naand:a4
+a => y4.IN0
+b => y4.IN1
+y4 <= y4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|gates|noor:a5
+a => y5.IN0
+b => y5.IN1
+y5 <= y5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|gates|xnoor:a6
+a => y6.IN0
+b => y6.IN1
+y6 <= y6.DB_MAX_OUTPUT_PORT_TYPE
+
+
