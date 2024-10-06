@@ -1,0 +1,27 @@
+module flipflops_tb;
+reg a,b,clk;
+wire q_jk, q_sr, q_d, q_t;
+integer i;
+
+
+flipflops dut (.a(a) ,.b(b) , .clk(clk) ,.q_jk(q_jk) ,.q_sr(q_sr) ,.q_d(q_d) ,.q_t(q_t));
+
+
+always #50 clk=~clk
+
+initial 
+	clk = 1'b1 ;
+
+for (i =0 ; i< 100 ; i=i+1)
+	
+	begin
+	
+	{a,b}=i;
+	#10;
+
+	end
+	
+
+endmodule
+
+

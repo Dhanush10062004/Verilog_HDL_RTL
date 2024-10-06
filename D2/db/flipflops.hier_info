@@ -1,0 +1,41 @@
+|flipflops
+a => a.IN4
+b => b.IN2
+clk => clk.IN4
+q_jk << jk_ff:a1.port3
+q_sr << sr_ff:a2.port3
+q_d << d_ff:a3.port2
+q_t << t_ff:a4.port2
+
+
+|flipflops|jk_ff:a1
+j => Mux0.IN3
+k => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|flipflops|sr_ff:a2
+s => Mux0.IN4
+s => Mux1.IN4
+s => Mux2.IN4
+r => Mux0.IN5
+r => Mux1.IN5
+r => Mux2.IN5
+clk => q~reg0.CLK
+clk => q~en.CLK
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|flipflops|d_ff:a3
+d => Decoder0.IN0
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|flipflops|t_ff:a4
+t => Decoder0.IN0
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

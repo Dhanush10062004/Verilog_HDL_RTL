@@ -1,0 +1,62 @@
+# Reading pref.tcl
+# do flipflops_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS\ PRGMS/D2 {D:/QUARTUS PRGMS/D2/flipflops.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:51 on Oct 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS PRGMS/D2" D:/QUARTUS PRGMS/D2/flipflops.v 
+# -- Compiling module flipflops
+# -- Compiling module jk_ff
+# -- Compiling module sr_ff
+# -- Compiling module d_ff
+# -- Compiling module t_ff
+# 
+# Top level modules:
+# 	flipflops
+# End time: 12:52:51 on Oct 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS\ PRGMS/D2 {D:/QUARTUS PRGMS/D2/flipflops_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:52:51 on Oct 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS PRGMS/D2" D:/QUARTUS PRGMS/D2/flipflops_tb.v 
+# -- Compiling module flipflops_tb
+# 
+# Top level modules:
+# 	flipflops_tb
+# End time: 12:52:51 on Oct 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  flipflops_tb.v
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" flipflops_tb.v 
+# Start time: 12:52:51 on Oct 06,2024
+# ** Error (suppressible): (vsim-19) Failed to access library 'flipflops_tb' at "flipflops_tb".
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./flipflops_run_msim_rtl_verilog.do PAUSED at line 12
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" work.flipflops_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" work.flipflops_tb 
+# Start time: 12:52:51 on Oct 06,2024
+# Loading work.flipflops_tb
+# Loading work.flipflops
+# Loading work.jk_ff
+# Loading work.sr_ff
+# Loading work.d_ff
+# Loading work.t_ff
+add wave sim:/flipflops_tb/*
+run
+run
+run
+# End time: 12:54:59 on Oct 06,2024, Elapsed time: 0:02:08
+# Errors: 1, Warnings: 0
