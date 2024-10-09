@@ -1,0 +1,44 @@
+module carryselect(a,b,cin,s,c);
+		input [3:0]a,b;
+		input cin;
+		output [3:0]s;
+		output c;
+		wire [3:0]s0,s1;
+		wire cin0,cin1;
+		assign cin0 = 1'b0;
+		assign cin1 = 1'b1;
+
+		fulladder fa1(a,b,cin0,s0,c0);
+		fulladder fa2(a,b,cin1,s1,c1);
+		mux2_1 m1(s0[0],s1[0],cin,s[0]);
+		mux2_1 m1(s0[0],s1[0],cin,s[1]);
+		mux2_1 m1(s0[0],s1[0],cin,s[2]);
+		mux2_1 m1(s0[0],s1[0],cin,s[3]);
+		mux2_1 m1(s0[0],s1[0],cin,c);
+
+endmodule 
+
+
+
+
+module fulladder(a,b,cin0,s,c);
+		input [3:0]a,b;
+		output [3:0]s;
+		output c;
+		input cin0;
+		
+		assign s=a^b;
+		assign c=(a&b)|(c&(a^b));
+
+endmodule 
+
+
+
+
+module mux2_1(a,b,s,y);
+		input a,b,s;
+		output y;
+
+		assign y=s?b:a ;
+
+endmodule 

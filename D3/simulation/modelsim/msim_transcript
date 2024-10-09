@@ -1,0 +1,61 @@
+# Reading pref.tcl
+# do carryselect_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/QUARTUS\ PRGMS/D3\ CARRY\ SELECT {D:/QUARTUS PRGMS/D3 CARRY SELECT/carryselect.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:23:05 on Oct 07,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/QUARTUS PRGMS/D3 CARRY SELECT" D:/QUARTUS PRGMS/D3 CARRY SELECT/carryselect.v 
+# -- Compiling module carryselect
+# -- Compiling module fulladder
+# -- Compiling module mux2_1
+# 
+# Top level modules:
+# 	carryselect
+# End time: 22:23:05 on Oct 07,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim -gui -l msim_transcript work.carryselect
+# vsim -gui -l msim_transcript work.carryselect 
+# Start time: 22:23:24 on Oct 07,2024
+# Loading work.carryselect
+# Loading work.fulladder
+# Loading work.mux2_1
+add wave sim:/carryselect/*
+force -freeze sim:/carryselect/a 1010 0
+force -freeze sim:/carryselect/b 0101 0
+force -freeze sim:/carryselect/cin 0 0
+run
+run
+force -freeze sim:/carryselect/a 1010 0
+force -freeze sim:/carryselect/b 0111 0
+force -freeze sim:/carryselect/cin 1 0
+force -freeze sim:/carryselect/s 1111 0
+force -freeze sim:/carryselect/c StX 0
+force -freeze sim:/carryselect/s0 1111 0
+force -freeze sim:/carryselect/s1 1111 0
+force -freeze sim:/carryselect/cin0 St0 0
+force -freeze sim:/carryselect/cin1 St1 0
+force -freeze sim:/carryselect/c0 StX 0
+force -freeze sim:/carryselect/c1 StX 0
+run
+run
+run
+force -freeze sim:/carryselect/b 0111 0
+run
+run
+run
+run
+run
+run
+run
+# End time: 22:26:15 on Oct 07,2024, Elapsed time: 0:02:51
+# Errors: 0, Warnings: 0
